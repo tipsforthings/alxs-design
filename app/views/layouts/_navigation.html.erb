@@ -20,7 +20,7 @@
 						</div>
 						<div class="navigation-links">
 							<dl data-accordion="" class="accordion">
-								<a href="#">HOME</a>          
+								<%= link_to 'Home', root_path %>          
 								<dd class="nav">
 									<a class="hasContent" href="#panel1">Projects</a>
 									<div id="panel1" class="content">
@@ -34,6 +34,10 @@
 										<a href="#">Link 3-2</a>      
 									</div>
 								</dd>
+								<%= link_to 'About', about_path %>          
+								<%= link_to 'Contact', contact_path %>          
+								<%= link_to 'Privacy', privacy_path %>          
+								<%= link_to 'Terms', terms_path %>          
 							</dl>
 						</div>
 					</div>

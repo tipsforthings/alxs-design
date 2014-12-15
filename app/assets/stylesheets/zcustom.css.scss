@@ -288,8 +288,10 @@ textarea {
 	padding-left: 3px;
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 98%;
+	width: 100%;
 }
-
+label {
+  }
 /* Alignment */
 .alignleft {
 	display: inline;
@@ -933,5 +935,35 @@ border-top: 0px;
 }
 h2.content-title {
     padding-top: 0px;
+}
+@media screen and (min-width:960px) {
+#contact-row {
+  margin-top: 1rem;
+}
+#contact_name {
+  margin-right: 100%;
+  width: 98%
+  }
+#contact_email {
+  margin-left: auto;
+  float: right;
+  width: 98%;
+  }
+}
+
+@media screen and (max-width:960px) {
+#contact-row {
+  margin-top: 1.5rem;
+  margin-bottom: 0px;
+}
+#contact_name {
+  margin-right: 100%;
+  width: 100%
+  }
+#contact_email {
+  margin-left: auto;
+  float: right;
+  width: 100%;
+  }
 }
 

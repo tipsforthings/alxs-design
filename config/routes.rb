@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
   root 'main#home'
 
-  get 'main/about'
-
-  get 'main/privacy'
-
-  get 'main/terms'
-
+  match '/contact',     to: 'contacts#new',             via: 'get'
+  match '/about',        to: 'main#about',               via: 'get'
+  match '/terms',        to: 'main#terms',               via: 'get'
+  match '/privacy',      to: 'main#privacy',             via: 'get'
+  resources "contacts", only: [:new, :create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

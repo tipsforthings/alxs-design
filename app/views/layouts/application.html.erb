@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "ALXS | Web Design" %></title>
+        <title><%= full_title(yield(:title)) %></title>
+
 
     <%= stylesheet_link_tag    "application" %>
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Roboto+Condensed%3A400%2C300%2C300italic%2C400italic%2C700%2C700italic&#038;ver=3.9.3' type='text/css' media='all' />
